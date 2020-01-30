@@ -1,3 +1,5 @@
+let katzDeliLine = []
+
 // takeANumber accepts 1) current line, 2) new person's name.
 // --> returns welcome message to new person including their place in line.
 // ex: "Welcome, Ada. You are number 1 in line."
