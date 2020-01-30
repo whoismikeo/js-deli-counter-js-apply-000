@@ -11,6 +11,10 @@ function takeANumber (line, name) {
 // nowSeving accepts 1) current line.
 // --> returns first person in line, then removes them from the line.
 function nowServing (line) {
+  if (line.length < 1) {
+    return "There is no "
+  }
+  
 	let currentPerson = line[0];
 	line.shift();
 	return `Currently serving ${currentPerson}.`;
