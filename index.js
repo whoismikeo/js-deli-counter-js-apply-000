@@ -3,14 +3,14 @@ let katzDeliLine = []
 // takeANumber accepts 1) current line, 2) new person's name.
 // --> returns welcome message to new person including their place in line.
 // ex: "Welcome, Ada. You are number 1 in line."
-const takeANumber = function(line, name) {
+function takeANumber (line, name) {
 	katzDeliLine.push(name);
 	return `Welcome ${name}. You are number ${line.length} in line.`;
 }
 
 // nowSeving accepts 1) current line.
 // --> returns first person in line, then removes them from the line.
-const nowServing = function(line) {
+function nowServing (line) {
 	let currentPerson = line[0];
 	line.shift();
 	return `Currently serving ${currentPerson}.`;
@@ -22,7 +22,7 @@ const nowServing = function(line) {
 // "The line is currently: 1. Ada, 2. Grace"
 // IF the line is empty, "The line is currently empty"
 
-const currentLine = function(line) {
+function currentLine (line) {
 
 	if (line.length < 1) {
         return "The line is currently empty.";
