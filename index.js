@@ -4,8 +4,8 @@ let katzDeliLine = []
 // --> returns welcome message to new person including their place in line.
 // ex: "Welcome, Ada. You are number 1 in line."
 function takeANumber (line, name) {
-	katzDeliLine.push(name);
-	return `Welcome ${name}. You are number ${line.length} in line.`;
+	line.push(name);
+	return `Welcome, ${name}. You are number ${line.length} in line.`;
 }
 
 // nowSeving accepts 1) current line.
