@@ -42,7 +42,7 @@ const nowServing = function(line) {
 // "The line is currently: 1. Ada, 2. Grace"
 // **IF** the line is empty, "The line is currently empty"
 
-
+<<<<<<< HEAD
 function currentLine (line) {
 
 	if (line.length < 1) {
