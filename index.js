@@ -12,7 +12,7 @@ function takeANumber (line, name) {
 // --> returns first person in line, then removes them from the line.
 function nowServing (line) {
   if (line.length < 1) {
-    return "There is no "
+    return "There is nobody waiting to be served";
   }
   
 	let currentPerson = line[0];
